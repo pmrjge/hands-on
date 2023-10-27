@@ -24,3 +24,18 @@ print(ner("My name is Sylvain and I work at Hugging Face in Brooklyn."))
 
 question_answerer = pipeline("question-answering")
 print(question_answerer(question="Where do I work?", context="My name is Sylvain and I work at Hugging Face in Brooklyn"))
+
+# summarizer = pipeline("summarization")
+# summarizer("""....""")
+
+translator = pipeline("translation", model="Helsinki-NLP/opus-mt-fr-en")
+print(translator("Ce cours est produit par Hugging Face."))
+
+# Text Classification
+# Zero shot classification
+# Text generation
+# Text completion
+# Token classification
+# Question answering
+# summarization
+# Translation
